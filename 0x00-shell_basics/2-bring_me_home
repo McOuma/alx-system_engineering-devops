@@ -1,6 +1,2 @@
 #!/bin/bash
-cd.. command, this moves the directory back one directory, also known as the parent directory.
-
-
-C:\Windows\System32>cd..
-C:\Windows>
+cd.. command, this moves the directory back to the parent directory.
