@@ -1,2 +1,2 @@
 #!/bin/bash
-cd.. command, this moves the directory back to the parent directory.
+cd.. this moves the directory back to the parent directory.
