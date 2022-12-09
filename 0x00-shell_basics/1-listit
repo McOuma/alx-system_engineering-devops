@@ -1,1 +1,2 @@
-ls
+#!/bin/bash
+ls - used in listing contents inside a directory.
