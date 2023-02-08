@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Get the list of HTML files in the current working directory
+files=$(ls *.html)
+
+# Loop through each HTML file
+for file in $files
+do
+  # Check if the file exists in the parent directory
+  if [ -f ../$file ]
+  then
+    # Check if the file in the parent directory is older than the file in the current working directory
+    if [ $file -nt ../$file ]
+    then
+      # Copy the file to the parent directory
+      cp $file ../$file
+    fi
+  else
+    # Copy the file to the parent directory
+    cp $file ../$file
+  fi
+done

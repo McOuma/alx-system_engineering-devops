@@ -1,0 +1,22 @@
+#!/bin/bash
+files=($(ls -A))
+sorted=()
+for file in "${files[@]}"; do
+  if [ "$file" = "." ] || [ "$file" = ".." ]; then
+    sorted=("$file" "${sorted[@]}")
+  else
+    sorted=("${sorted[@]}" "$file")
+  fi
+done
+sorted=($(echo "${sorted[@]}" | LC_COLLATE=C sort))
+for ((i=0; i < ${#sorted[@]}; i++)); do
+  if [ -d "${sorted[i]}" ]; then
+    echo -n "${sorted[i]}/"
+  else
+    echo -n "${sorted[i]}"
+  fi
+  if [ $i -lt $(( ${#sorted[@]} - 1 )) ]; then
+    echo -n ","
+  fi
+done
+echo ""
