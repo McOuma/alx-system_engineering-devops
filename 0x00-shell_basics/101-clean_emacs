@@ -1,9 +1,2 @@
 #!/bin/bash 
-files=$(ls)
-for file in $files
-do
-  if [[ "${file: -1}" == "~" ]]
-  then
-    rm $file
-  fi
-done
+rm *~

@@ -1,9 +1,2 @@
 #!/bin/bash
-files=$(ls)
-for file in $files
-do
-  if [[ "${file:0:1}" == [A-Z] ]]
-  then
-    mv $file /tmp/u/
-  fi
-done
+mv [A-Z]* /tmp/u/
