@@ -1,0 +1,35 @@
+#Demystifying the Journey: What Happens When You Type https://www.google.com in Your Browser
+
+##Introduction
+
+Have you ever wondered what goes on behind the scenes when you enter a web address into your browser? The process involves a series of intricate steps, each crucial to delivering the content you requested. In this article, we'll take a deep dive into the journey of a simple web request, from the moment you hit Enter to the moment you see the webpage rendered on your screen.
+
+##DNS Request
+The journey begins with a Domain Name System (DNS) request. When you type "https://www.google.com" into your browser and press Enter, your computer sends a DNS query to a DNS server. The DNS server translates the human-readable domain name (www.google.com) into an IP address (e.g., 172.217.164.110), which is used to locate the server on the internet.
+
+##TCP/IP
+With the IP address in hand, your computer establishes a Transmission Control Protocol (TCP) connection to the server. TCP ensures reliable data transmission by breaking down the information into packets, which are then reassembled at the destination.
+
+#Firewall
+Before your computer can communicate with the server, it passes through any firewalls in place. Firewalls act as a security barrier, filtering incoming and outgoing traffic based on predefined rules. They help protect against unauthorized access and potential threats.
+
+##HTTPS/SSL
+In the case of secure connections (https), an additional step comes into play: Secure Sockets Layer (SSL) or its successor, Transport Layer Security (TLS). This protocol encrypts the data being exchanged between your computer and the server, safeguarding it from eavesdroppers or malicious actors.
+
+##Load-Balancer
+For large-scale websites like Google, multiple servers work together to handle incoming requests. A load-balancer distributes these requests evenly among the servers, ensuring optimal performance and preventing any one server from becoming overloaded.
+
+##Web Server
+Once the request reaches the appropriate server, a web server takes over. It processes the request, retrieves the requested resources (such as HTML, CSS, JavaScript files), and prepares them for delivery.
+
+##Application Server
+In dynamic web applications, an application server may be involved. This server executes application-specific logic, such as processing form submissions, interacting with databases, and generating dynamic content. It communicates with the web server to deliver the final response.
+
+##Database
+In scenarios where data retrieval or storage is required, an interaction with a database occurs. This is where information is fetched, updated, or stored for future use. The application server manages this communication, ensuring seamless data flow.
+
+##Conclusion
+
+As you can see, the process of loading a webpage involves a complex interplay of various components, each with its unique role in delivering the content you requested. From DNS resolution to database interactions, every step is crucial to ensure a seamless and secure browsing experience.
+
+Understanding this process not only sheds light on the inner workings of the internet but also provides valuable insight for software engineers, network administrators, and anyone curious about the technology that powers our digital world.

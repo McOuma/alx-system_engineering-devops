@@ -1,0 +1,29 @@
+#Flow of Request when Typing https://www.google.com
+
+##DNS Resolution
+
+User's computer sends a DNS request to resolve "www.google.com" to an IP address.
+DNS server responds with the IP address of Google's server.
+##Establish TCP/IP Connection
+
+User's computer initiates a TCP connection to the server's IP address.
+##Traffic Encryption (HTTPS/SSL)
+
+Encrypted connection is established using HTTPS/SSL.
+##Firewall
+
+Traffic passes through a firewall for security checks.
+##Load Balancer
+
+Load balancer distributes the request to one of the available web servers.
+##Web Server
+
+Web server processes the request.
+Retrieves HTML, CSS, JavaScript, and other resources.
+##Application Server
+
+In dynamic applications, an application server may be involved.
+It processes application-specific logic and communicates with the web server.
+##Database Interaction
+
+If required, application server interacts with the database to fetch or store data.
